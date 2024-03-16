@@ -1,0 +1,51 @@
+﻿@model DevFolio.Models.TblContact
+<div class="col-md-6">
+    <div class="title-box-2">
+        <h5 class="title-left">
+            Bize Mesaj Gönder
+        </h5>
+    </div>
+    <div>
+        <form method="post">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        @Html.TextBoxFor(Model => Model.ContactNameSurname, new { @class = "form-control", @placeholder = "İsim Soyisim" })
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        @Html.TextBoxFor(Model => Model.ContactEmail, new { @class = "form-control", @placeholder = "e-Mail" })
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        @Html.TextBoxFor(Model => Model.ContactSubject, new { @class = "form-control", @placeholder = "Konu" })
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        @Html.TextAreaFor(Model => Model.ContactMessage, 5, 5, new { @class = "form-control", @placeholder = "Mesaj Giriniz" })
+                        @*<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>*@
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="button button-a button-big button-rouded">Mesajı Yolla</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    @if (ViewBag.show == true)
+    {
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Mesajın Gönderildi!</strong> Mesaj attığın için çok teşekkür ederim :) En kısa zamanda geri döneceğim...
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>}
+</div>

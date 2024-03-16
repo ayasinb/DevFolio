@@ -1,0 +1,31 @@
+﻿@model List<DevFolio.Models.TblTestiMonial>
+@{
+    ViewBag.Title = "TestiMonialList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Referans Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Referans İsmi</th>
+        <th>Referans Yorumu</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TestiMonialID</td>
+            <td>@item.TestiMonialNameSurname</td>
+            <td>@item.TestiMonialDescription</td>
+            <td><a href="/TestiMonial/DeleteTestiMonial/@item.TestiMonialID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/TestiMonial/UpdateTestiMonial/@item.TestiMonialID" class="btn btn-warning">Güncelle</a></td>
+        </tr>
+    }
+
+
+</table>
+<a href="/TestiMonial/CreateTestiMonial/" class="btn btn-info">Yeni Giriş</a>
+

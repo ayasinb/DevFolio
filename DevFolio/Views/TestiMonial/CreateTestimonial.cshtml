@@ -1,0 +1,21 @@
+﻿@model DevFolio.Models.TblTestiMonial
+    @{ 
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Referans Girişi</h2>
+
+<form method="post">
+    <label>Referans Adı</label>
+    @Html.TextBoxFor(x => x.TestiMonialNameSurname, new { @class = "form-control" })
+    <br />
+    <label>Referans Görsel</label>
+    @Html.TextBoxFor(x => x.TestiMonialImageURL, new { @class = "form-control" })
+    <br />
+    <label>Referans Yorumu</label>
+    @Html.TextBoxFor(x => x.TestiMonialDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info"">Yeni Ekle</button>
+</form>
+

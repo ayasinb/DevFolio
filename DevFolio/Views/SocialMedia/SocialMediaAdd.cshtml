@@ -1,0 +1,25 @@
+﻿
+@{ ViewBag.Title = "SocialMediaAdd";
+                Layout = "~/Views/AdminLayout/Index.cshtml"; }
+
+<h2>Sosyal Medya Oluştur</h2>
+
+<br />
+<div class="container">
+    <form method="post" action="/SocialMedia/SocialMediaAdd/">
+        <a href="/SocialMedia/SocialMediaList/" class="btn btn-info">Geri Dön</a>
+        <br />
+        <br />
+        <label>Platform Adı</label>
+        <input type="text" name="SocialMediaPlatformName" class="form-control" />
+        <br />
+        <label>İkon URL</label>
+        <input type="text" name="SocialMediaIconURL" class="form-control" />
+        <br />
+        <label>Hesap URL</label>
+        <input type="text" name="SocialMediaRedirectURL" class="form-control" />
+        <br />
+
+        <button class="btn btn-primary">Kaydet</button>
+    </form>
+</div>
