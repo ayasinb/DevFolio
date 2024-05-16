@@ -1,0 +1,31 @@
+﻿@model DevFolio.Models.TblTestiMonial
+@{
+    ViewBag.Title = "UpdateTestiMonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Referans Güncelleme İşlemleri</h2>
+
+<form method="post">
+    <label>Ref. ID</label>
+    <input type="text" class="form-control" name="TestiMonialID" value="@Model.TestiMonialID" />
+    <br />
+<<<<<<< HEAD
+    <label>Referans Adı</label>
+    <input type="text" class="form-control" name="TestiMonialNameSurname" value="@Model.TestiMonialNameSurname" />
+    <br />
+    <label>Referans Resim</label>
+    <input type="text" class="form-control" name="TestiMonialImageURL" value="@Model.TestiMonialImageURL" />
+    <br />
+=======
+    <label>Yetenek Adı</label>
+    <input type="text" class="form-control" name="TestiMonialNameSurname" value="@Model.TestiMonialNameSurname" />
+    <br />
+>>>>>>> c481837dab3600e01ee40f7a6a2613662513de6c
+    <label>Yetenek Değeri</label>
+    <input type="text" class="form-control" name="TestiMonialDescription" value="@Model.TestiMonialDescription" />
+    <br />
+    <button class="btn btn-warning">Referansı Güncelle</button>
+
+</form>
+

@@ -1,0 +1,26 @@
+﻿
+@{ ViewBag.Title = "SendMessage";
+                Layout = "~/Views/AdminLayout/Index.cshtml"; }
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<br />
+<form method="post">
+    <div class="container">
+        <h3>Yeni Mesaj Sayfası admin</h3>
+        <label>Adınız soyadınız</label>
+        <input type="text" class="form-control" name="NameSurname" />
+        <br />
+        <label>Email adresiniz</label>
+        <input type="email" class="form-control" name="Email" />
+        <br />
+        <label>Mesaj Konusu</label>
+        <input type="text" class="form-control" name="Subject" />
+        <br />
+        <label>Mesajınız</label>
+        <textarea rows="5" class="form-control" name="Message"></textarea>
+        <br />
+        <button class="btn btn-primary">Mesajı Gönder</button>
+        <button class="btn btn-danger">Vazgeç</button>
+
+    </div>
+</form>

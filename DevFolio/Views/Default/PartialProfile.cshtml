@@ -1,0 +1,24 @@
+﻿@model List<DevFolio.Models.TblProfile>
+@foreach (var item in Model)
+{
+<div class="row">
+    <div class="col-sm-6 col-md-5">
+        <div class="about-img">
+<<<<<<< HEAD
+            <img src="/Templates/devfolio-master/img/1logo.jpg" class="img-fluid rounded b-shadow-a" alt="">
+=======
+            <img src="/Templates/devfolio-master/img/mete.jpg" class="img-fluid rounded b-shadow-a" alt="">
+>>>>>>> c481837dab3600e01ee40f7a6a2613662513de6c
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-7">
+        <div class="about-info">
+            <p><span class="title-s">Ad Soyad: </span> <span>@item.NameSurname</span></p>
+            <p><span class="title-s">Ünvan: </span> <span>@item.Title</span></p>
+            <p><span class="title-s">E-Mail: </span> <span>@item.Email</span></p>
+            <p><span class="title-s">Cep Telefonu: </span> <span>@item.Telefon</span></p>
+        </div>
+    </div>
+</div>}
+
+

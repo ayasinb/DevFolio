@@ -1,0 +1,52 @@
+﻿@model DevFolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "SocialMediaUpdate";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Sosyal Medya Güncelle</h2>
+
+<br />
+<div class="container">
+
+    @using (Html.BeginForm("SocialMediaUpdate", "SocialMedia", FormMethod.Post))
+    {
+<<<<<<< HEAD
+    <form class="form-group" method="post">
+        @Html.HiddenFor(x => x.SocialMediaID)
+        <label>Durumu</label>
+        @Html.TextBoxFor(x => x.SocialMediaStatus, new { @class = "form-control" })
+        <br />
+        <label>Platform Adı</label>
+        @Html.TextBoxFor(x => x.SocialMediaPlatformName, new { @class = "form-control" })
+        <br />
+        <label>Simge Adresi</label>
+        @Html.TextBoxFor(x => x.SocialMediaIconURL, new { @class = "form-control" })
+        <br />
+        <label>Hesap Adresi</label>
+        @Html.TextBoxFor(x => x.SocialMediaRedirectURL, new { @class = "form-control" })
+        <br />
+
+        <button class="btn btn-primary">Güncelle</button>
+    </form>}
+=======
+        <form class="form-group" method="post">
+            @Html.HiddenFor(x =>x.SocialMediaID)
+            @Html.HiddenFor(x => x.SocialMediaStatus)
+            <label>Platform Adı</label>
+            @Html.TextBoxFor(x => x.SocialMediaPlatformName, new { @class = "form-control" })
+            <br />
+            <label>Simge Adresi</label>
+            @Html.TextBoxFor(x => x.SocialMediaIconURL, new { @class = "form-control" })
+            <br />
+            <label>Hesap Adresi</label>
+            @Html.TextBoxFor(x => x.SocialMediaRedirectURL, new { @class = "form-control" })
+            <br />
+
+            <button class="btn btn-primary">Güncelle</button>
+        </form>}
+>>>>>>> c481837dab3600e01ee40f7a6a2613662513de6c
+
+</div>
+
+
